@@ -55,8 +55,11 @@ body {
 /* Intentionally bad: large image, no reserved intrinsic size */
 .hero-image {
   width: 100%;
+  aspect-ratio: 2200 / 1400; /* Match the actual dimensions of your image */
+  height: auto;
   display: block;
   border-radius: 12px;
+  background: #eee; /* Shows a gray box while the image loads */
 }
 
 .intro,
